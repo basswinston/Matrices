@@ -76,20 +76,30 @@ class Matrix:
         sea.heatmap(self._matrix, annot=True, fmt=".0f", cmap="inferno")
         plot.title("Matrix Visualization")
         plot.show()
+        
+    def save_to_file(self, filename):
+        with open(filename, 'w') as f:
+            json.dump(self._matrix.tolist(), f)
+
+    @staticmethod
+    def load_from_file(filename):
+        with open(filename, 'r') as f:
+            data = json.load(f)
+        return Matrix(data)
 
     
 
-test1 = Matrix.matrix_from_random(5, 5)
-test2 = Matrix.matrix_from_random(5, 5)
+#test1 = Matrix.matrix_from_random(5, 5)
+#test2 = Matrix.matrix_from_random(5, 5)
 
 #print(test1.transpose()._matrix)
 #test1.display()
-print(test1._matrix)
-print("-----------------------")
-print(test2._matrix)
-print("-----------------------")
-print(test1.multiply(test2)._matrix)
-print("-----------------------")
+#print(test1._matrix)
+#print("-----------------------")
+#print(test2._matrix)
+#print("-----------------------")
+#print(test1.multiply(test2)._matrix)
+#print("-----------------------")
 
-print(Matrix.matrix_from_input()._matrix)
+#print(Matrix.matrix_from_input()._matrix)
 
