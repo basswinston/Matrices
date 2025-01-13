@@ -19,7 +19,8 @@ sizes 1-20 and values 0-9999, or special matrices such as zero, identity, or dia
 
 ### Function Usage
 #### Matrix Creation
-- User input or Random: Matrix.from_random(rows=<number>, cols=<number>, low=<min_value>, high=<max_value>)
+- Random Matrix: Matrix.matrix_from_random(rows=<number>, cols=<number>, low=<min_value>, high=<max_value>)
+- Matrix from Input: Matrix.matrix_from_input()
 
 - Identity Matrix: Matrix.identity(size)
 - Zero Matrix: Matrix.zero(rows, cols)
