@@ -14,8 +14,8 @@ sizes 1-20 and values 0-9999, or special matrices such as zero, identity, or dia
 - File Handling: Save and load matrices to and from files
 
 ## Usage
-Main Script: python main.py
-Unittest: python -m unittest unit_test.py
+- Main Script: python main.py
+- Unittest: python -m unittest unit_test.py
 
 ### Function Usage
 #### Matrix Creation
