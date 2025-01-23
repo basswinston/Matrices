@@ -28,7 +28,7 @@ sizes 1-20 and values 0-9999, or special matrices such as zero, identity, or dia
 
 #### Operations
 - Addition: mat1.add(mat2)
- -Subtraction: mat1.subtract(mat2)
+- Subtraction: mat1.subtract(mat2)
 - Multiplication: mat1.multiply(mat2)
 - Transpose: mat1.transpose()
 - Determinant: mat1.determinant()
